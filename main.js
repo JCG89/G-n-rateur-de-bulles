@@ -1,5 +1,9 @@
 
 //Je crée une fonction qui va englober tout le procéssus de création des bulles
+const counterDisplay = document.querySelector('h3');
+
+let counter = 0;
+
 const bubbleMaker = () => {
       // Création d'une balise span pour contenir laa bulle
       const bubble = document.createElement("span");
@@ -19,6 +23,9 @@ const bubbleMaker = () => {
       //Faire disparaitre une bulle au click
 
       bubble.addEventListener('click', () => {
+
+            counter++
+            counterDisplay.textContent = counter;
             bubble.remove();
       })
       // Arreter les bulle au bout de 8s avec setTimeout

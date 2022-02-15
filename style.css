@@ -20,3 +20,9 @@ body{
             filter: hue-rotate(720deg);
       }
 }
+h3{
+      font-size: 5rem;
+      text-align: center;
+      margin-top: 20px;
+      color: rgba(128, 128, 128, 0.555);
+}
